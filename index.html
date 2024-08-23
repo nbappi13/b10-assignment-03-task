@@ -1,14 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- daisyui and tailwind css -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>assignment-03</title>
     <link rel="shortcut icon" href="assets/fav icon assignment.png" type="image/fav-icon">
+    <!-- font-awesome cdn  -->
+    <script src="https://kit.fontawesome.com/783c27a377.js" crossorigin="anonymous"></script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <!-- customize tailwind design  -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                // clifford: '#da373d',
+              }
+              fontFamily: {
+                Manrope: ["Manrope", system-ui],
+              }
+              backgroundImage: {
+                // 
+              }
+            }
+          }
+        }
+      </script>
+    
 </head>
+
 <body>
-    <header>
-        <!--  -->
+    <header class=" h-screen bg-gradient-to-b from-neutral-100 via-zinc-100 to-white">
+        <!-- navbar starts-->
+        <nav class="py-5">
+          <div class="navbar bg-base-100 justify-evenly bg-gradient-to-r from-neutral-100 via-zinc-100 to-neutral-100">
+            <div class="navbar-start ml-2 md:ml-5 lg:ml-6 xl:ml-28">
+              
+              <img class="bg-lime-300 rounded-full" width="24" height="24" src="https://img.icons8.com/material-outlined/24/circled-up-right-2.png" alt="circled-up-right-2"/>
+              <a class="btn btn-ghost text-3xl font-extrabold">Rinterio</a>
+            </div>
+            <div class="navbar-center hidden lg:flex lg:-ml-32">
+              <ul class="menu menu-horizontal px-1">
+                <li><a>Home</a></li>
+                <li><a>Services</a></li>
+                <li><a>Portfolio</a></li>
+                <li><a>Blogs</a></li>
+                <li><a>Contact Us</a></li>
+            </ul>
+            </div>
+            <div class="navbar-end   hidden md:block md:flex md:items-center md:space-x-3 md:pr-12 lg:pr-6 xl:mr-32" >
+                <i class="fa-solid fa-magnifying-glass rounded-full bg-white p-3"></i>
+                <i class="fa-solid fa-cart-shopping rounded-full bg-white p-3"></i>
+                <a class="btn bg-lime-300 rounded-full text-xl font-extrabold">Book Consult <img width="24" height="24" src="https://img.icons8.com/material-sharp/24/circled-up-right-2.png" alt="circled-up-right-2"/></a>
+            </div>
+            <div tabindex="0" role="button" class="btn btn-ghost ml-16 md:-ml-14 lg:hidden ">
+              <img width="50" height="50" src="https://img.icons8.com/cotton/64/menu.png" alt="menu"/>
+              </div>
+          </div>
+        </nav>
     </header>
     <main>
         <!--  -->
@@ -17,4 +74,5 @@
         <!--  -->
     </footer>
 </body>
+
 </html>
